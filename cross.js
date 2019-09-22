@@ -30,8 +30,7 @@ const field = {
         this.cells = [];
         this.field.innerHTML='';
         this.win=false;
-        // document.getElementById('cross').innerHTML=this.winCross;
-        // document.getElementById('zero').innerHTML=this.winZero;
+        
         this.startGame();
     },
     render: function() {
@@ -240,50 +239,7 @@ const field = {
             this.checkWinVertical() ||
             this.checkWinDiagonalLeft () ||
             this.checkWinDiagonalRight ()
-            //горизонт
-            // this.cells[0].classList.length>1 &&
-            // this.cells[1].classList.length>1 &&
-            // this.cells[2].classList.length>1 &&
-            // this.cells[0].classList[1]===this.cells[1].classList[1] &&
-            // this.cells[1].classList[1]===this.cells[2].classList[1] ||
-            // this.cells[3].classList.length>1 &&
-            // this.cells[4].classList.length>1 &&
-            // this.cells[5].classList.length>1 &&
-            // this.cells[3].classList[1]===this.cells[4].classList[1] &&
-            // this.cells[4].classList[1]===this.cells[5].classList[1] ||
-            // this.cells[6].classList.length>1 &&
-            // this.cells[7].classList.length>1 &&
-            // this.cells[8].classList.length>1 &&
-            // this.cells[6].classList[1]===this.cells[7].classList[1] &&
-            // this.cells[7].classList[1]===this.cells[8].classList[1] ||
-            //диагональ
-            // this.cells[0].classList.length>1 &&
-            // this.cells[4].classList.length>1 &&
-            // this.cells[8].classList.length>1 &&
-            // this.cells[0].classList[1]===this.cells[4].classList[1] &&
-            // this.cells[4].classList[1]===this.cells[8].classList[1] ||
-
-            // this.cells[2].classList.length>1 &&
-            // this.cells[4].classList.length>1 &&
-            // this.cells[6].classList.length>1 &&
-            // this.cells[2].classList[1]===this.cells[4].classList[1] &&
-            // this.cells[4].classList[1]===this.cells[6].classList[1] ||
-            // //вертикаль
-            // this.cells[0].classList.length>1 &&
-            // this.cells[3].classList.length>1 &&
-            // this.cells[6].classList.length>1 &&
-            // this.cells[0].classList[1]===this.cells[3].classList[1] &&
-            // this.cells[3].classList[1]===this.cells[6].classList[1] ||
-            // this.cells[1].classList.length>1 &&
-            // this.cells[4].classList.length>1 &&
-            // this.cells[7].classList.length>1 &&
-            // this.cells[1].classList[1]===this.cells[4].classList[1] &&
-            // this.cells[4].classList[1]===this.cells[7].classList[1] ||
-            // this.cells[2].classList.length>1 &&
-            // this.cells[5].classList.length>1 &&
-            // this.cells[8].classList.length>1 &&
-            // this.cells[2].classList[1]===this.cells[5].classList[1] &&
-            // this.cells[5].classList[1]===this.cells[8].classList[1] 
+            
             
             )
 
@@ -305,12 +261,7 @@ const field = {
                 250
             );
 
-            // this.newGame();
-            // if (this.bCross){
-            //     this.winCross++;
-            // } else {
-            //     this.winZero++;
-            // }
+           
         }
         else {
             let draw= true;
@@ -331,7 +282,7 @@ const field = {
                     },
                     100
                 );
-                //this.newGame();
+               
             }
         }
         
@@ -421,22 +372,5 @@ document.getElementById('registration-submit').addEventListener ('click', event 
 
 
 
-// const xhr = new XMLHttpRequest();
-// xhr.open('GET', 'http://localhost',false);
-// xhr.send();
-// if (xhr.status ==200) {
-//     console.log(xhr);
-// }
 
-// fetch(
-//     'http://localhost',
-//     {
-//         method: 'GET',
-//         //headers:{}
-//         //body:{}
-//     }
-
-// ).then (res => res.text()).then(res => {
-//     console.log (res);
-// });
    
